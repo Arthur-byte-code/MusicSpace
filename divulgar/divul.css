@@ -1,0 +1,41 @@
+body{
+    background-image: url(20450684.jpg);
+}
+
+.formu{
+    height:80%;
+background-color:rgb(24, 23, 23); 
+opacity: ;
+width: 20%;
+margin-left: auto;
+margin-right:auto;
+border-radius: 6%;
+}
+
+.formu h3, form {
+    color:goldenrod;
+    margin-left: 8%;
+    
+
+}
+
+.formu img {
+    opacity: 2;
+    border-radius: 6%;
+    width: 100%;
+}
+.formu h4{
+    margin-top :10%;
+    margin-left: 4%;
+}
+
+#upload img{
+    height: 20%;
+    width: 40%;
+    margin-left:40% ;
+    margin-top: -5%;
+   }
+
+   #upload img:hover{
+    background-color: gray;
+   }

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MusicSpace</title>
+  <link rel="stylesheet" type="text/css" href="MusicSpace.css">
+  <link rel="icon" type="image/png" href="nota-musical_318-430633.webp">
+  <style>
+    /* Estilos CSS para o botão e o card */
+    .lyrics-button {
+      position: absolute;
+      top: 0;
+      right: 40%;
+      margin: 10px;
+    }
+
+    .lyrics-card {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 7%;
+      height:300px;
+      width: 300px;
+      background-color: #131212;
+      padding: 10px;
+      display: none;
+      /* essa parte abaixo é pra vter um scroll pra descer e ver o resto do q ta escrito*/
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    .lyrics-card p{
+      color: goldenrod;
+    }
+
+    .minimize-button {
+      margin-top: 10px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body></body>
+  <header>
+     <h1> Bem vindo ao MusicSpace</h1>
+    
+    <img src="face.png">
+    <a href="insta/insta.html"><img src="insta.png"></a>
+    <nav>
+      <ul>
+        <li><a href="../Index.html.html">Retornar ao GameSpace  ↩️</a></li>
+        <li><a href="divulgar/sobreMs.html">Sobre o MusicSpace 📜📃</a></li>
+        
+        <li><a href="divulgar/divul.html">Divulgar minha música &#127925; &#127911;</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <div>
+        <h2>Artistas em Destaque</h2>
+      </div>
+      <div class="artistas">
+        <div class="artista">
+          <img src="artista1.jpg" alt="Artista 1">
+          <div class="bla">
+            <p>The Polish Ambassador, cujo nome real é David Sugalski, é um produtor de música eletrônica e ativista ambiental dos Estados Unidos. Ele é conhecido por seu estilo musical vibrante e cativante, que combina elementos de diversos gêneros, como funk, hip-hop, dub, reggae e música eletrônica.</p>
+          </div>
+          <div class="play">
+            <audio src="The Polish Ambassador - Let the Rhythm Just ft Mr Lif & Ayla Nereo (Jumpsuit Records) (128 kbps).mp3" type="audio/mp3" controls autoplay></audio>
+          </div>
+          <h3>The Polish Ambassador</h3>
+          <button class="lyrics-button" onclick="toggleLyrics('lyrics-card1')">Mostrar Letras</button>
+          <div id="lyrics-card1" class="lyrics-card">
+            <h2>Letras da Música</h2>
+            <p><p>Yes!<br>
+              Let us start this quest<br>
+              Let me say first of all that I feel blessed<br>
+              Just waking up every day is a prize<br>
+              Feeling all the love before I open my eyes<br>
+              It wasn't always like this<br>
+              Strife is...<br>
+              A conduit to make us feel lifeless..<br></p>
+              <p>So lost in the adds, fads, drags us down<br>
+              To a lower level where we can't be found<br>
+              But in this underground we forge our own paths<br>
+              The sun still shines<br>
+              And yes we do laugh<br>
+              Yes we do have the things you wanna sell us<br>
+              Fulfilled from within despite what you tell us<br>
+              Rebellious is the spirit that flies..<br>
+              So ethereal that earth becomes skies...<br></p>
+              <p>I've gotta say with no further ado<br>
+              We're happy to be here with you<br></p>
+              Chorus (Ayla):
+              
+              <p>So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…<br>
+              So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…<br>
+              So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…</p>
+              Verse 2 (Mr. Lif):
+              
+              <p>It's just another harsh case of cannibalism<br>
+              Oops, I really meant to say capitalism...<br></p>
+              <p>After the rhythm dies down...<br>
+              Will it revitalize your soul when you remember the sound?<br></p>
+              <p>If not, you're listening to audio garbage<br>
+              Shitty as can be<br>
+              R.I.P.<br>
+              No homage<br></p>
+              <p>We hit the lab, and we're hoping to accomplish<br>
+              Jams that'll lead you to the land that's promised<br></p>
+              <p>Honest<br>
+              Raw sentiments project<br>
+              You see us at the set<br>
+              And we instantly connect<br></p>
+              <p>Cause we've been thinking bout y'all for days<br>
+              So here's a little something for us modern day slaves...<br></p>
+              <p>No companies, no filters, no residue<br>
+              Just the impact of this vibe we're sending you<br></p>
+              <p>I've gotta say with no further ado<br>
+              We're happy to be here with you<br></p>
+              Chorus (Ayla):
+              
+              <p>So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…<br>
+              So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…<br>
+              So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…</p>
+              Verse 3 (Mr. Lif):
+              
+              <p>"Why"<br>
+              A usual way we start questions<br>
+              "How" we advance through life & learn lessons<br>
+              Suggestions are made and then explored<br>
+              I'm positive<br>
+              Whatever's negative gets ignored<br></p>
+              <p>We're on a mission<br>
+              Can you see that?<br>
+              I float a theory through the air, now can you breathe that?<br></p>
+              <p>If you inhale<br>
+              Then you embark on a tale<br>
+              Don't grieve over things you leave<br>
+              Just set sail<br></p>
+              <p>There's no fail<br>
+              There is only success<br>
+              If you learn from mistakes you made, and progress<br></p>
+              <p>Maybe it's best that we halt this discussion<br>
+              Sit back and just bathe in percussion<br></p>
+              <p>Let the rhythm just carry us away<br>
+              As we twirl through the atmosphere<br>
+              And just sway<br></p>
+              <p>I've gotta say with no further ado<br>
+              We're happy to be here with you<br></p>
+              Chorus (Ayla):
+              
+              <p>So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…<br>
+              So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…<br>
+              So you can hold all of the folds of all these parts that become soul<br>
+              When waves crash shorelines to this heart, and beat by beat taken apart…</p></p>
+            <button class="minimize-button" onclick="toggleLyrics('lyrics-card1')">Minimizar</button>
+          </div>
+        </div>
+        <div class="artista">
+          <img src="artista2.jpg" alt="Artista 2">
+          <div class="bla">
+            <p>Pep Love, cujo nome real é Albert Allen, é um renomado rapper norte-americano. Ele nasceu e foi criado em Oakland, Califórnia. Conhecido por seu estilo lírico habilidoso e versátil, Pep Love se destacou como membro do aclamado coletivo de hip-hop Hieroglyphics.</p>
+          </div>
+          <div class="play">
+            <audio class="t" src="Hip Hop My Friend - Pep Love [OFFICIAL MUSIC VIDEO] (128 kbps).mp3" type="audio/mp3" controls autoplay></audio>
+          </div>
+          <h3>Pep Love</h3>
+          <button class="lyrics-button" onclick="toggleLyrics('lyrics-card2')">Mostrar Letras</button>
+          <div id="lyrics-card2" class="lyrics-card">
+            <h2>Letras da Música</h2>
+            <p><!DOCTYPE html>
+              <html>
+              <head>
+                  <title>Letra da música</title>
+              </head>
+              <body>
+                  
+                  <p>(I got a hole where my heart used to be)</p>
+              
+                  <p>I'm a real true artist, put all of my heart in this<br>
+                  I live for the basslines and guitar riffs<br>
+                  But too modest, the music biz<br>
+                  Is a vast sea, and you know where the sharks is</p>
+              
+                  <p>I discovered hip-hop as a little tyke<br>
+                  Before I kissed a girl or ever rid a bike<br>
+                  There was nothin' about it the kid didn't like, so an<br>
+                  Obsession was born for written rhymes ripping mics</p>
+              
+                  <p>My astute pursuit wasn't about loot<br>
+                  To boot I studied the game from root to fruit<br>
+                  People gathered in flocks, hip-hop, had the<br>
+                  Block locked and had us thinking out of the box</p>
+              
+                  <p>The time we were living in it was a testament<br>
+                  For before the corporation would invest in it<br>
+                  And now they acting brand new, I'm waving a flag<br>
+                  For the culture, they lookin' at me like I'm a damn fool</p>
+              
+                  <p>(When I was up<br>
+                  You would always come around)<br>
+                  Hip-hop, hip-hop, hip-hop<br>
+                  You are my life</p>
+              
+                  <p>(But when I needed a friend<br>
+                  Oh you can never be found)<br>
+                  Hip-hop, hip-hop, you are my friend</p>
+              
+                  <p>You might also like<br>
+                  Freak Rock<br>
+                  Pep Love<br>
+                  Can’t Nobody Do It Like Us<br>
+                  Pep Love<br>
+                  You Never Knew<br>
+                  Hieroglyphics</p>
+              
+                  <p>What's really relevant, is it good in the<br>
+                  Hood if it ain't selling and what is you telling me<br>
+                  Back when we was back spinning the party was<br>
+                  Packed and it wasn't nobody to stack digits</p>
+              
+                  <p>They did it for the kids on the block, instead of banging<br>
+                  They was hanging out doing that up rock flow rock<br>
+                  Hip-hop was there when nobody else cared<br>
+                  No education, no healthcare, or welfare</p>
+              
+                  <p>The Bronx burning we turning into an inferno<br>
+                  What do we learn to know when we ain't earning dough<br>
+                  We got greedier when the media showed up<br>
+                  And got needier when the city disowned us</p>
+              
+                  <p>I guess it was tryna find a way out the projects<br>
+                  And that gentrification is the process to progress<br>
+                  God bless the child with the heavenly trust fund<br>
+                  The heaviest lump sum that come from the slums</p>
+              
+                  <p>(When I was up<br>
+                  You would always come around)<br>
+                  Hip-hop, hip-hop, hip-hop<br>
+                  You are my life</p>
+              
+                  <p>(But when I needed a friend<br>
+                  Oh you can never be found)<br>
+                  Hip-hop, hip-hop, you are my friend</p>
+              </body>
+              </html>
+              </p>
+            <button class="minimize-button" onclick="toggleLyrics('lyrics-card2')">Minimizar</button>
+          </div>
+        </div>
+        <div class="artista">
+          <img src="artista3.jpg" alt="Artista 3">
+          <div class="bla">
+            <p>PRAYERS, também conhecido como PRAYERS_GOTHIC SUMMER, é um duo musical formado por Leafar Seyer e Dave Parley. Eles são conhecidos por criar um som único que combina elementos do gênero musical eletrônico com influências do punk, do goth e da música latina.</p>
+          </div>
+          <div class="play">
+            <audio src="PRAYERS_ GOTHIC SUMMER (128 kbps).mp3" type="audio/mp3" controls autoplay></audio>
+          </div>
+          <h3>Prayers</h3>
+          <button class="lyrics-button" onclick="toggleLyrics('lyrics-card3')">Mostrar Letras</button>
+          <div id="lyrics-card3" class="lyrics-card">
+            <h2>Letras da Música</h2>
+            <p><p>No love just hate<br>
+              I swear they're the same<br>
+              They both ignite passion<br>
+              They both ignite pain</p>
+          
+              <p>The prize I pay left me empty in pain<br>
+              I swear that life's against me<br>
+              Cuz it's getting in the way</p>
+          
+              <p>I swear that life's against me<br>
+              Cuz it's getting in the way</p>
+          
+              <p>I swear that life's against me<br>
+              Cuz it's getting in the way</p>
+          
+              <p>And gothic is the summer<br>
+              And gothic is the summer<br>
+              And gothic is the summer<br>
+              (Kids)</p>
+          
+              <p>They caught me slippin<br>
+              So they cut me in the face<br>
+              Wicked found out<br>
+              And he put them in their graves</p>
+          
+              <p>Now he's haunted by the living<br>
+              Haunted by the dead<br>
+              This life we signed up for<br>
+              The day we got jumped in</p>
+          
+              <p>And gothic is the summer<br>
+              And gothic is the summer<br>
+              And gothic is the summer<br>
+              (Kids)</p>
+          
+              <p>Esoteric tendencies<br>
+              Fire in my face<br>
+              If you ain't with us<br>
+              Then you're one of them</p>
+          
+              <p>No to fight for nothing<br>
+              No to fight for less<br>
+              So many doin life<br>
+              Yet the neighborhood forgets</p>
+          
+              <p>Santa muerte, won't you sanctify their names?<br>
+              Santa muerte, won't you sanctify my name?</p></p>
+            <button class="minimize-button" onclick="toggleLyrics('lyrics-card3')">Minimizar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Todos os direitos reservados &copy; 2023</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+    
+<!-- esse codigo javascript serve para que um player seja pausado quando outro for acionado-->
+<script>
+  // Obtém todos os elementos de áudio
+  const audios = document.querySelectorAll('audio');
+
+  // Pausa todos os elementos de áudio, exceto o que está sendo reproduzido
+  function pauseOtherAudios(currentAudio) {
+    audios.forEach(audio => {
+      if (audio !== currentAudio) {
+        audio.pause();
+      }
+    });
+  }
+
+  // Adiciona um evento de clique aos elementos de áudio
+  audios.forEach(audio => {
+    audio.addEventListener('play', function() {
+      pauseOtherAudios(this);
+    });
+  });
+</script>
+
+  <script>
+    // Função para exibir ou ocultar o card com as letras
+    function toggleLyrics(cardId) {
+      var lyricsCard = document.getElementById(cardId);
+      if (lyricsCard.style.display === "none") {
+        lyricsCard.style.display = "block";
+      } else {
+        lyricsCard.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

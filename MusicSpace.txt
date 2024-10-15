@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu Site de Música</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Meu Site de Música</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Artistas</a></li>
+        <li><a href="#">Álbuns</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Artistas em Destaque</h2>
+      <div class="artistas">
+        <div class="artista">
+          <img src="artista1.jpg" alt="Artista 1">
+          <h3>Artista 1</h3>
+        </div>
+        <div class="artista">
+          <img src="artista2.jpg" alt="Artista 2">
+          <h3>Artista 2</h3>
+        </div>
+        <div class="artista">
+          <img src="artista3.jpg" alt="Artista 3">
+          <h3>Artista 3</h3>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Últimos Lançamentos</h2>
+      <div class="albums">
+        <div class="album">
+          <img src="album1.jpg" alt="Álbum 1">
+          <h3>Álbum 1</h3>
+        </div>
+        <div class="album">
+          <img src="album2.jpg" alt="Álbum 2">
+          <h3>Álbum 2</h3>
+        </div>
+        <div class="album">
+          <img src="album3.jpg" alt="Álbum 3">
+          <h3>Álbum 3</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Todos os direitos reservados &copy; 2023</p>
+  </footer>
+</body>
+</html>

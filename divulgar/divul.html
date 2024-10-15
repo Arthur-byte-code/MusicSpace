@@ -1,0 +1,55 @@
+<html>
+    <head>
+      
+      <title> Enviar Música</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="divul.css">
+    </head>
+   <body>
+         <div class="formu">
+            <img src="Mslogo.png">
+            <p><h3> Envie sua Música </h3></p>
+            <form>
+               <label for="nome">Nome:</label>
+               <input type="text" id="nome" name="nome" required><br><br>
+               
+               <label for="email">E-mail:</label>
+               <input type="email" id="email" name="email" required><br><br>
+               
+               <label for="telefone">Telefone:</label>
+               <input type="tel" id="telefone" name="telefone" required><br><br>
+               
+               <label for="estado">Estado:</label>
+               <select id="estado" name="estado" required>
+               <option value="">Selecione um estado</option>
+               <option value="AC">Acre</option>
+               <option value="AL">Alagoas</option>
+               <option value="AP">Amapá</option>
+               <!-- Outras opções de estados -->
+               </select><br><br>
+               
+               <label for="cidade">Cidade:</label>
+               <input type="text" id="cidade" name="cidade" required><br><br>
+               
+               <input type="submit" value="Enviar">
+           </form>
+           <label for="arquivo" class="botao-enviar">
+            <div id="upload"><img src="cloud-folder-storage-gold-icon-illustration-of-golden-icon-on-dark-background-vector.jpg" alt="Botão de Envio"></div>
+            <input id="arquivo" type="file" style="display: none;">
+          </label>
+          
+          <script>
+            document.querySelector('.botao-enviar').addEventListener('click', function() {
+              document.querySelector('#arquivo').click();
+            });
+          </script>
+          
+
+         </div>
+
+
+
+
+
+
+   </body>
